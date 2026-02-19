@@ -1,7 +1,7 @@
 package edu.oldwestbury.se.lab.shapes;
 
 public class Square implements Shape {
-    public double sideLen;
+    private double sideLen;
 
     public Square(double sideLen) {
         this.sideLen = sideLen;
