@@ -2,14 +2,30 @@ package edu.oldwestbury.se.lab;
 
 import edu.oldwestbury.se.lab.shapes.*;
 
-public class Renderer {
+public class Renderer 
+{
     public Rectangle rectangle;
+    public Square square;
+    public Circle circle;
     
-    Renderer(Rectangle rectangle) {
+    
+    Renderer(Rectangle rectangle) 
+    {
         this.rectangle = rectangle;
     }
 
-    void draw() {
+    Renderer(Square square)
+    {
+        this.square = square;
+    }
+
+    Renderer(Circle circle)
+    {
+        this.circle = circle;
+    }
+
+    void draw() 
+    {
         double area = rectangle.getArea();
 
         // assume implementation
